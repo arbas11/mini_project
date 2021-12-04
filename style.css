@@ -1,0 +1,190 @@
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Varela Round', sans-serif; */
+/* .container-modal{
+    border-radius: 100px;
+} */
+body{
+    font-family: 'Nunito', sans-serif; 
+}
+.modal-footer{
+    border-top-style: none;
+    display: flex;
+    justify-content: center;
+}
+.header-container{
+    border-bottom: #2C272E;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding:0;
+}
+.logo-style{
+    font-family: 'Shadows Into Light', cursive;
+    color:chocolate;
+    font-size: 3rem;
+}
+.nav-menu-item{
+    margin-left: 20px;
+}
+.nav-menu-link{
+    text-decoration: none;
+    color: #483434;
+    font-family: 'Nunito', sans-serif; 
+}
+.nav-menu-container{
+    margin-left: auto;
+}
+.nav-collapse-style{
+    display: flex;
+    align-items: flex-end;
+}
+svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 4px;
+    border-color: #483434;
+}
+.alert-style{
+    background-color: darkgrey;
+    border-radius: 20px;
+    margin: 5px 10px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.item-card{
+    border-radius: 20px;
+    padding: 0 5px;
+    border-style: none;
+    margin: 50px 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.item-header{
+    text-align: center;
+    display: inline;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+.item-images{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1 solid black;
+    box-shadow: 3px 3px 19px -6px rgba(0,0,0,1);
+    -webkit-box-shadow: 3px 3px 19px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 3px 19px -6px rgba(0,0,0,1);
+}
+.item-footer{
+    text-align: center;
+    display: inline;
+    font-size: 0.8em;
+    font-family: 'Nunito', sans-serif;
+}
+.img-modal-container{
+    display: flex;
+    justify-content: center;
+}
+.modal-content{
+    border-radius: 20px;
+}
+.item-footer-modal{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 30px;
+}
+.item-btn{
+    width: 5em;
+    padding: 1px 6px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #577BC1;
+    border-style: none;
+}
+.item-btn-modal{
+    width: 10em;
+}
+.upload-button{
+    margin-bottom: 40px;
+}
+.footer-style{
+    padding: 50px 100px;
+    margin-top: 50px;
+    height: 720px;
+    background-color: floralwhite;
+}
+.form-style{
+    border-radius: 10px;
+}
+.form-label-style{
+    margin-top: 20px;
+}
+.bottom-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-link{
+    margin:30px;
+    margin-top: 10px;
+  }
+  .footer-link-style{
+    text-align: center;
+}
+.footer-link-style-each{
+    text-decoration: none;
+    color:rgb(161, 95, 223);
+}
+  .copyright-footer{
+      text-align: center;
+    font-size: 0.75rem;
+  }
+.container-aboutus{
+    height: 600px;
+    font-family: 'Nunito', sans-serif; 
+}
+.aboutus-img{
+    background-image: url("images/artsy-heart.jpeg");
+    background-position: center;
+    height: 600px;
+}
+.aboutus-text{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.breadcrumb-container{
+    margin-top: 10px;
+}
+.text-about-tag{
+    font-family: 'Varela Round', sans-serif;
+}
+.text-heart{
+    color: rgb(230, 6, 43);
+    font-size: 2.5rem;
+    font-family: 'Varela Round', sans-serif;
+}
+   
