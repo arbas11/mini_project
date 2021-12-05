@@ -1,6 +1,7 @@
 /* font-family: 'Nunito', sans-serif;
 font-family: 'Shadows Into Light', cursive;
-font-family: 'Varela Round', sans-serif; */
+font-family: 'Varela Round', sans-serif; 
+font-family: 'Yellowtail', cursive;*/
 /* .container-modal{
     border-radius: 100px;
 } */
@@ -57,17 +58,42 @@ svg{
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.btn-upload{
+    width: 5em;
+    padding: 1px 6px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-style: none;  
+    background-color: palevioletred;
+}
+.alert-style-upload{
+    background-color: pink;
+    color: palevioletred;
+    border-radius: 20px;
+    margin: 5px 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .main-content{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
+    margin: 0;
+}
+.collections-style{
+    text-align: center;
+    color: chocolate;
+    font-family: 'Yellowtail', cursive;
+    margin-top: 30px;
 }
 .item-card{
     border-radius: 20px;
     padding: 0 5px;
     border-style: none;
-    margin: 50px 5px;
+    margin: 30px 5px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -96,9 +122,12 @@ svg{
 }
 .item-footer{
     text-align: center;
-    display: inline;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
     font-size: 0.8em;
     font-family: 'Nunito', sans-serif;
+
 }
 .img-modal-container{
     display: flex;
@@ -125,17 +154,22 @@ svg{
 .item-btn-modal{
     width: 10em;
 }
+.upload-container{
+    background-color: rgb(255, 255, 244);
+    padding: 50px;
+}
 .upload-button{
     margin-bottom: 40px;
 }
 .footer-style{
     padding: 50px 100px;
     margin-top: 50px;
-    height: 650px;
+    height: 700px;
     background-color: floralwhite;
 }
 .form-style{
     border-radius: 10px;
+    margin: 20px 0;
 }
 .form-label-style{
     margin-top: 20px;

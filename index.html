@@ -12,6 +12,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,300&family=Shadows+Into+Light&family=Varela+Round&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -37,6 +40,47 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="item-btn item-btn-modal btn btn-primary">Contact Artist</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal upload -->
+    <div class="modal fade container-modal" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="upload-container modal-content">
+                <div class="modal-header">
+                    <h5 id="mdl-title" class="modal-title" id="exampleModalLabel">Start sell your Collection:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-group">
+                            <form id="upload" class="form-label-style">
+                                <label for="name">Artist name</label>
+                                <input id="artistUpload"
+                                    class="form-input col-lg-7 form-style form-style-uploas form-control" type="text"
+                                    name="Name">
+                                <label for="title">Your art title</label>
+                                <input id="titleUpload"
+                                    class="form-input col-lg-7 form-style form-style-uploas form-control" type="text"
+                                    name="title">
+                                <label for="image">Your painting image URL</label>
+                                <input id="imageUpload"
+                                    class="form-input col-lg-7 form-style form-style-uploas form-control" type="text"
+                                    name="image">
+                                <label for="price">Name your price</label>
+                                <input id="priceUpload"
+                                    class="form-input col-lg-7 form-style form-style-uploas form-control" type="text"
+                                    name="price">
+                                <label for="desc">Short Description About your Art</label>
+                                <input id="descUpload"
+                                    class="form-input col-lg-7 form-style form-style-uploas form-control" type="text"
+                                    name="desc">
+                                <button class="item-btn btn btn-primary">upload</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,16 +117,28 @@
     <div class="alert-container">
         <div class="alert-style alert">New painting daily, check us out EVERYDAY!!</div>
     </div>
+    <div class="alert-container">
+        <div class="alert-style-upload alert">
+            <h2>An Artist? Sale Your Collection here</h2>
+            <!-- Button trigger modal upload -->
+            <button type="button" class="btn btn-danger btn-upload" data-bs-toggle="modal"
+                data-bs-target="#uploadModal">
+                upload
+            </button>
+        </div>
+
+    </div>
     <section id="main-section" class="main-content row">
+        <h2 id="first-card" class="collections-style">Collections</h2>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName2' class="brand-name">Jean-Honoré Fragonard</span><br>
+                <span id='artistName2' class="brand-name">Jean-Honoré Fragonard</span>
             </div>
             <span id='itemImg2'>
                 <img class="item-images img-fluid card-img-top" src="images/the-swing.jpg">
-            </span><br>
+            </span>
             <span class="item-footer">
-                <span id='itemTitle2' class="item-name">The Swing</span><br>
+                <span id='itemTitle2' class="item-name">The Swing</span>
                 <span id='itemPrice2' class="price-tag">$ 150.000.000,-</span>
             </span>
             <!-- Button trigger modal -->
@@ -95,12 +151,11 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName1' class="brand-name">Van Gogh</span><br>
+                <span id='artistName1' class="brand-name">Van Gogh</span>
             </div>
-            <span id='itemImg1'><img class="item-images img-fluid" src="images/starry night.jpg"
-                    alt="images"></span><br>
+            <span id='itemImg1'><img class="item-images img-fluid" src="images/starry night.jpg" alt="images"></span>
             <span class="item-footer">
-                <span id='itemTitle1' class="item-name">Starry Night</span><br>
+                <span id='itemTitle1' class="item-name">Starry Night</span>
                 <span id='itemPrice1' class="price-tag">$ 150.000,-</span>
             </span>
             <!-- Button trigger modal -->
@@ -112,11 +167,11 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName6' class="brand-name">Diego Velázquez</span><br>
+                <span id='artistName6' class="brand-name">Diego Velázquez</span>
             </div>
-            <span id='itemImg6'><img class="item-images img-fluid" src="images/las meninas.jpg" alt="images"></span><br>
+            <span id='itemImg6'><img class="item-images img-fluid" src="images/las meninas.jpg" alt="images"></span>
             <span class="item-footer">
-                <span id='itemTitle6' class="item-name">Las Meninas</span><br>
+                <span id='itemTitle6' class="item-name">Las Meninas</span>
                 <span id='itemPrice6' class="price-tag">$ 650.000,-</span>
             </span>
             <!-- Button trigger modal -->
@@ -128,13 +183,13 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName3' class="brand-name">S. Sudjojono</span><br>
+                <span id='artistName3' class="brand-name">S. Sudjojono</span>
             </div>
             <span id='itemImg3'><img class="item-images img-fluid"
                     src="images/S.-Sudjojono-Persiapan-Gerilya-1964-image-courtesy-of-SSudjojono-center.jpg"
-                    alt="images"></span><br>
+                    alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle3' class="item-name">Persiapan Gerilya, 1964</span><br>
+                <span id='itemTitle3' class="item-name">Persiapan Gerilya, 1964</span>
                 <span id='itemPrice3' class="price-tag">Rp 12.000.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -146,12 +201,12 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName4' class="brand-name">Raden Saleh</span><br>
+                <span id='artistName4' class="brand-name">Raden Saleh</span>
             </div>
             <span id='itemImg4'><img class="item-images img-fluid" src="images/raden saleh flood on java.jpg"
-                    alt="images"></span><br>
+                    alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle4' class="item-name">A Flood on Java</span><br>
+                <span id='itemTitle4' class="item-name">A Flood on Java</span>
                 <span id='itemPrice4' class="price-tag">Rp 7.000.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -164,11 +219,11 @@
 
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName5' class="brand-name">Claude Monet</span><br>
+                <span id='artistName5' class="brand-name">Claude Monet</span>
             </div>
-            <span id='itemImg5'><img class="item-images img-fluid" src="images/the truth.jpg" alt="images"></span><br>
+            <span id='itemImg5'><img class="item-images img-fluid" src="images/the truth.jpg" alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle5' class="item-name"> Waterlilies and Japanese Bridge</span><br>
+                <span id='itemTitle5' class="item-name"> Waterlilies and Japanese Bridge</span>
                 <span id='itemPrice5' class="price-tag">$ 1.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -180,12 +235,12 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName7' class="brand-name">Dullah</span><br>
+                <span id='artistName7' class="brand-name">Dullah</span>
             </div>
             <span id='itemImg7'><img class="item-images img-fluid" src="images/dullah_istriku_bigjpg.jpeg"
-                    alt="images"></span><br>
+                    alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle7' class="item-name">Istriku, 1965</span><br>
+                <span id='itemTitle7' class="item-name">Istriku, 1965</span>
                 <span id='itemPrice7' class="price-tag">Rp 7.000.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -197,12 +252,11 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName8' class="brand-name">Itji Tarmizi</span><br>
+                <span id='artistName8' class="brand-name">Itji Tarmizi</span>
             </div>
-            <span id='itemImg8'><img class="item-images img-fluid" src="images/itji tarmizi1.jpeg"
-                    alt="images"></span><br>
+            <span id='itemImg8'><img class="item-images img-fluid" src="images/itji tarmizi1.jpeg" alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle8' class="item-name">Menyongsong Fajar</span><br>
+                <span id='itemTitle8' class="item-name">Menyongsong Fajar</span>
                 <span id='itemPrice8' class="price-tag">Rp 7.000.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -214,11 +268,11 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName9' class="brand-name">Caspar David Friedrich</span><br>
+                <span id='artistName9' class="brand-name">Caspar David Friedrich</span>
             </div>
-            <span id='itemImg9'><img class="item-images img-fluid" src="images/71dLtt7UHDL.jpg" alt="images"></span><br>
+            <span id='itemImg9'><img class="item-images img-fluid" src="images/71dLtt7UHDL.jpg" alt="images"></span>
             <div class="item-footer">
-                <span id='itemTitle9' class="item-name">Wanderer above the Sea of Fog</span><br>
+                <span id='itemTitle9' class="item-name">Wanderer above the Sea of Fog</span>
                 <span id='itemPrice9' class="price-tag">$ 700.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -230,12 +284,12 @@
         </div>
         <div class="item-card card col-lg-3 col-md-4 col-sm-6 col-xs-6">
             <div class="item-header">
-                <span id='artistName10' class="brand-name">Basuki Abdullah</span><br>
+                <span id='artistName10' class="brand-name">Basuki Abdullah</span>
             </div>
             <span id='itemImg10'><img class="item-images img-fluid" src="images/basukiAbdullahBidadariMandi.jpeg"
-                    alt=images"></span><br>
+                    alt=images"></span>
             <div class="item-footer">
-                <span id='itemTitle10' class="item-name">Bidadari Mandi</span><br>
+                <span id='itemTitle10' class="item-name">Bidadari Mandi</span>
                 <span id='itemPrice10' class="price-tag">Rp 1.000.000.000,-</span>
             </div>
             <!-- Button trigger modal -->
@@ -245,20 +299,40 @@
                 Detail
             </button>
         </div>
+        <!-- <div class="upload-container container">
+            <h4>Start sell your Collection:</h4>
+            <div class="form-group">
+                <form id="upload" class="form-label-style">
+                    <label for="name">Artist name</label>
+                    <input id="artistUpload" class="form-input col-lg-7 form-style form-style-uploas form-control"
+                        type="text" name="Name">
+                    <label for="title">Your art title</label>
+                    <input id="titleUpload" class="form-input col-lg-7 form-style form-style-uploas form-control"
+                        type="text" name="title">
+                    <label for="image">Your painting image URL</label>
+                    <input id="imageUpload" class="form-input col-lg-7 form-style form-style-uploas form-control"
+                        type="text" name="image">
+                    <label for="price">Name your price</label>
+                    <input id="priceUpload" class="form-input col-lg-7 form-style form-style-uploas form-control"
+                        type="text" name="price">
+                    <label for="desc">Short Description About your Art</label>
+                    <input id="descUpload" class="form-input col-lg-7 form-style form-style-uploas form-control"
+                        type="text" name="desc">
+                    <button class="item-btn btn btn-primary">upload</button>
+                </form>
+            </div>
+        </div> -->
     </section>
     <footer class="footer-style container-fluid">
-        <!-- <h4>Start sell your Collection:</h4>
-        <button onclick="upload()" class="item-btn btn btn-primary upload-button">Upload</button> -->
         <h5>Let's get in touch:</h5>
         <div class="form-group">
             <form action="mailto:ariobaskoro@live.com" class="form-label-style" method="post" enctype="text/plain">
                 <label for="name">Your Name:</label>
-                <input class="form-input col-lg-7 form-style form-style form-control" type="text" name="Name"
-                    value=""><br>
+                <input class="form-input col-lg-7 form-style form-control" type="text" name="Name" value="">
                 <label>Your Email:</label>
-                <input class="form-style form-control" type="email" name="Email" value=""><br>
-                <label>Your Message:</label><br>
-                <textarea class="form-style form-control" name="Message" rows="3" cols="30"></textarea><br>
+                <input class="form-style form-control" type="email" name="Email" value="">
+                <label>Your Message:</label>
+                <textarea class="form-style form-control" name="Message" rows="3" cols="30"></textarea>
                 <input class="item-btn btn btn-primary" type="submit">
             </form>
         </div>
