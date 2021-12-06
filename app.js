@@ -34,6 +34,16 @@ uploadForm.addEventListener('submit', function (e) {
   e.preventDefault();
 })
 
+
+  //URL buat percobaan upload
+// https://images.unsplash.com/photo-1638290046884-bfbfdfc3af17?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80
+
+// https://images.unsplash.com/photo-1638210574685-e9d0ad824f6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
+
+// https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80
+
+
+
 // let idNum = 10;
 // function upload() {
 //   idNum += 1;
@@ -54,8 +64,3 @@ uploadForm.addEventListener('submit', function (e) {
   // let title = "girl on field";
   // let price = "1.200.000";
   // let description = "this is a paimtimg by me";
-// https://images.unsplash.com/photo-1638290046884-bfbfdfc3af17?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80
-
-// https://images.unsplash.com/photo-1638210574685-e9d0ad824f6c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80
-
-// https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=690&q=80
