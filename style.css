@@ -8,11 +8,6 @@ font-family: 'Yellowtail', cursive;*/
 body{
     font-family: 'Nunito', sans-serif; 
 }
-.modal-footer{
-    border-top-style: none;
-    display: flex;
-    justify-content: center;
-}
 .header-container{
     border-bottom: #2C272E;
     border-bottom-style: solid;
@@ -50,6 +45,12 @@ svg{
     border-width: 4px;
     border-color: #483434;
 }
+.modal-footer{
+    border-top-style: none;
+    display: flex;
+    justify-content: center;
+}
+
 .alert-style{
     background-color: darkgrey;
     border-radius: 20px;
@@ -154,13 +155,14 @@ svg{
 .item-btn-modal{
     width: 10em;
 }
+.upload-button{
+    margin-bottom: 40px;
+}
 .upload-container{
     background-color: rgb(255, 255, 244);
     padding: 50px;
 }
-.upload-button{
-    margin-bottom: 40px;
-}
+
 .footer-style{
     padding: 50px 100px;
     margin-top: 50px;
@@ -180,18 +182,18 @@ svg{
     justify-content: center;
     align-items: center;
   }
-  .footer-link{
+.footer-link{
     margin:30px;
     margin-top: 10px;
   }
-  .footer-link-style{
+.footer-link-style{
     text-align: center;
 }
 .footer-link-style-each{
     text-decoration: none;
     color:rgb(161, 95, 223);
 }
-  .copyright-footer{
+.copyright-footer{
       text-align: center;
     font-size: 0.75rem;
   }
