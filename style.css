@@ -223,4 +223,11 @@ svg{
     font-size: 2.5rem;
     font-family: 'Varela Round', sans-serif;
 }
+.work-in-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
    
